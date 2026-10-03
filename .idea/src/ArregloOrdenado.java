@@ -70,3 +70,37 @@ public int insertar(String palabra) {
     n++;
     return posInsertada;
 }
+public int eliminar(String palabra, boolean usarBinaria) {
+    int[] resultadoBusqueda = usarBinaria ? busquedaBinaria(palabra) : busquedaLinealOptimizada(palabra);
+    int pos = resultadoBusqueda[0];
+
+    if (pos == -1) {
+        return -1;
+    }
+    for (int i = pos; i < n - 1; i++) {
+        arreglo[i] = arreglo[i + 1];
+    }
+
+    n--;
+    return pos;
+}
+public int modificar(String palabraAntigua, String palabraNueva, boolean usarBinaria) {
+    int posEliminada = eliminar(palabraAntigua, usarBinaria);
+
+    if (posEliminada == -1) {
+        return -1;
+    }
+    return insertar(palabraNueva);
+}
+public void mostrar() {
+    if (n == 0) {
+        System.out.println("El arreglo está vacío.");
+        return;
+    }
+
+    System.out.println("--- ELEMENTOS EN EL ARREGLO ---");
+    for (int i = 0; i < n; i++) {
+        System.out.println("[" + i + "] => " + arreglo[i]);
+    }
+}
+}
