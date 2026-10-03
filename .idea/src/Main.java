@@ -29,4 +29,50 @@ public class Main {
                                 opcion = 0;
                         }
 
-                       }
+                       } switch (opcion) {
+                case 1:
+                        arreglo.inicializar();
+                        System.out.println("\nSe ha reiniciado el arreglo (borrado lógico realizado).");
+                        pausa();
+                        break;
+
+                case 2:
+                        System.out.println();
+                        arreglo.mostrar();
+                        pausa();
+                        break;
+
+                case 3:
+                        opcionBuscar();
+                        pausa();
+                        break;
+
+                case 4:
+                        opcionInsertar();
+                        pausa();
+                        break;
+
+                case 5:
+                        opcionEliminar();
+                        pausa();
+                        break;
+
+                case 6:
+                        opcionModificar();
+                        pausa();
+                        break;
+
+                case 7:
+                        mostrarCreditos();
+                        pausa();
+                        break;
+
+                case 8:
+                        System.out.println("\n¡Programa finalizado exitosamente!");
+                        break;
+
+                default:
+                        System.out.println("\nOpción no válida. Intente nuevamente.");
+                        pausa();
+                        break;
+        }
