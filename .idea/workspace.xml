@@ -3,6 +3,9 @@
   <component name="AIDiffSettings">
     <option name="showAIDiff" value="false" />
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2cc6413f-c210-4c84-885f-395b72323739" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/src/ArregloOrdenado.java" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/src/ArregloOrdenado.java" afterDir="false" />
