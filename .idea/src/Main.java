@@ -9,8 +9,8 @@ public class Main {
         }
 
 
-                do {
-                        limpiarPantalla();
+                do {       
+                        limpiarPantalla();  
                         System.out.println("      MENÚ - ARREGLOS ORDENADOS");
                         System.out.println("1. Inicializar / Borrar arreglo");
                         System.out.println("2. Mostrar Arreglo");
