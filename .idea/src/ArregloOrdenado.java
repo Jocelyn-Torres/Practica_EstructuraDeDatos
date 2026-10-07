@@ -88,7 +88,7 @@ public int modificar(String palabraAntigua, String palabraNueva, boolean usarBin
     int posEliminada = eliminar(palabraAntigua, usarBinaria);
 
     if (posEliminada == -1) {
-        return -1;
+        return -1;   
     }
     return insertar(palabraNueva);
 }
